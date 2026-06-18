@@ -1,0 +1,3 @@
+inventory = {"Screws":150, "Bolts":8, "nuts":45}
+desc_inventory= {key:("order" if value<=10 else "stock")for (key , value) in inventory.items()}
+print(desc_inventory)
